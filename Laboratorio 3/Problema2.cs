@@ -12,9 +12,21 @@ namespace Laboratorio_3
 {
     public partial class Problema2 : Form
     {
+        Danel dn = new Danel();
         public Problema2()
         {
             InitializeComponent();
         }
+
+        private void Problema2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dn.addCeldas()
+        }
     }
 }
+ 
