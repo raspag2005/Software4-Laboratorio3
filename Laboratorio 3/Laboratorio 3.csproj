@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuentaDeAhorro.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +54,7 @@
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Ordenamiento.cs" />
+    <Compile Include="MetodoGenerales4.cs" />
     <Compile Include="Problema 1.cs">
       <SubType>Form</SubType>
     </Compile>
