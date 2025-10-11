@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-251.26927.53">
+    <data-source name="FarmaciasDB@localhost" uuid="5bd8a0a5-bd24-49c2-b19b-1c6ad2151892">
+      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-provider>ms-sso</auth-provider>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" negative="1" />
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="FarmaciasDB">
+              <node kind="schema" negative="1" />
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="FarmaciasDB@LAPTOP-2TN70U4O" uuid="76015cd3-7b57-4800-819e-b8586d486402">
+      <database-info product="Microsoft SQL Server" version="16.00.1000" jdbc-version="4.3" driver-name="Microsoft JDBC Driver 12.8 for SQL Server" driver-version="12.8.1.0" dbms="MSSQL" exact-version="16.0.1000" exact-driver-version="12.8">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>A</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="FarmaciasDB">
+              <node kind="schema" negative="1" />
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>
