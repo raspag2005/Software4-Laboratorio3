@@ -10,34 +10,40 @@ namespace Laboratorio_3
     internal class Danel
     {
         Random numRand = new Random();
-        int numerosRandom;
-        int elNum;
-        List<int> listDNum = new List<int>();
+       public List<double> listDNum = new List<double>();
 
-        // método para crear listas 
-        public void addCeldas(int elNum)
-        {
-            numerosRandom = numRand.Next(1,20);
-            if (elNum == 0) // Se le pregunta al usuario si desea que las celdas se hagan aleatorias
-            {
-                for (int i = 0; i <= numerosRandom; i ++) {
-                    listDNum.Add(numerosRandom); }                
-            }
-            else { for (int i = 0; i < 20; i++)
-                    listDNum.Add(elNum); } // el usuario coloca los valores manualmente
 
+        //Método para agregar nuevo nuevo random
+        public double randomNumeros()
+        {       
+                listDNum.Add(numRand.Next(1, 20));
+                return listDNum.Last();
         }
-        public string delNumEnCelda (int elNum) //Método para elminar un número de la lista
+        public double addNumeros(double elNum)  // método para agregar número en la lista 
         {
-            string texto =""; 
-            for (int i = 0; i <= listDNum.Count; i++) //recorre la lista y si encuentra el número lo borra
-                if (listDNum.Contains(elNum)) 
-                    {  
-                    listDNum.Remove(elNum);
-                  texto = "Número eliminado";  
+                listDNum.Add(elNum);
+                return listDNum.Last();
+        }
+        //Método para elminar un número de la lista
+        public string deleteNum (double elNum) 
+        {
+            string texto = "";
+            bool eliminado = false;
+            for (int i = listDNum.Count - 1; i >= 0; i--)
+            {
+                if (listDNum[i] == elNum)
+                {
+                    listDNum.RemoveAt(i);
+                    eliminado = true;
                 }
-            else { texto = "No se encontró el número"; }
-            return texto; 
+            }
+
+            if (eliminado)
+                texto = "Número(s) eliminado(s)";
+            else
+                texto = "No se encontró el número";
+
+            return texto;
         }
     }
 }
